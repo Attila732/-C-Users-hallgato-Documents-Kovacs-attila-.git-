@@ -1,3 +1,84 @@
 body{
-    color: red;
+    background-image:url("kepek/hatter.jpg") ;
+
+}
+header{
+    background-image: url("kepek/fejlec.jpg");
+    grid-area: h;
+    margin:auto;
+    width: 900px;
+    text-align: center;
+    
+}
+h1{
+    color: seashell;
+}
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: a;
+}
+aside{
+    padding: 15px;
+    grid-area: s;
+}
+
+footer{
+    grid-area: f;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+ul li a{
+    text-decoration: none;
+    border: groove;
+   
+
+}ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    
+    
+    display: inline;
+    width: 60px;
+    background-color:blue;
+  }
+#jobbra img{
+    width: 75%;
+-ms-transform: rotate(-8deg); /* IE 9 */
+-webkit-transform: rotate(-8deg); /* Safari */
+transform: rotate(-8deg);
+}  
+#balra img{
+    width: 75%;
+    padding: 10px 10px 20px 10px;
+    -ms-transform: rotate(7deg); 
+    -webkit-transform: rotate(7deg); 
+    transform: rotate(7deg);
+}
+main {
+    max-width: 900px;
+    background-color: seashell;
+    margin: auto;
+    display:grid;
+    grid-gap: 10px;   
+    grid-template-columns:50px 50px 1fr 1fr 1fr 1fr 50px 50px;
+    grid-template-areas:
+                        "h h h h h h h h"
+                        "n n a a a s s s"
+                        "n n a a a s s s"
+                        "n n a a a s s s"
+                        "f f f f f f f f";
+  
+}
+
+@media screen{
+    
 }
